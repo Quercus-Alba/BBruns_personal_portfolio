@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barry Bruns, eLearning Design & Development</title>
+
+    <!-- Selects sidebar menu for pad, laptop, and desktop screen sizes -->
+    <link rel="stylesheet" media='screen and (min-width: 917px) and (max-width: 5000px)' href="resources/css/styles.css"/>
+    <!-- Selects hamburger menu with top bar for small pad or phone screen sizes -->
+    <link rel="stylesheet" media='screen and (min-width: 100px) and (max-width: 916px)' href="resources/css/hamburger_nav.css"/>
+
+    <!-- link used for hamburger menus and social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-family: 'Roboto', sans-serif;  -->
+    <!-- font-family: 'Lora', serif;  -->
+    <!-- font-family: 'Lato', sans-serif;  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body class="landing-page">
+    <!-- aside block displays sidebar objects and navigation menu -->
+    <aside class="sidebar">
+        <div class="me-photo-container">
+            <img class="me-photo" src="resources/images/bb_pic_163x200.jpg"/
+            alt="Photo of Barry J. Bruns">
+        </div>
+        <div class="me-title">
+            <h1><a href="#">BARRY J. BRUNS</a></h1>
+            <p>Full-Stack Software Engineer, eLearning Course Developer, & Photographer</p>
+        </div>
+            
+        <div class="nav-sidebar">
+            <a href="interests.html">INTERESTS</a>
+            <a href="proj.html">WEB DESIGN</a>
+            <a href="elearn.html">eLEARNING</a>
+            <a href="photo.html">PHOTOGRAPHY</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="social-media">
+            <p>Get in touch</p>
+            <a href="https://www.facebook.com/barry.bruns.58/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/barry-b-74a40116/" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+    </aside>
+
+    <!-- header block displays top bar and hamburger menu -->
+    <header>
+        <div class="mobile-container">
+
+            <div class="topnav">
+                <!-- Drop-down (dd) menu options -->
+                <div id="myLinks">
+                    <a class="dd-option" href="interests.html">INTERESTS</a>
+                    <a class="dd-option" href="proj.html">WEB DESIGN</a>
+                    <a class="dd-option" href="elearn.html">eLEARNING</a>
+                    <a class="dd-option" href="photo.html">PHOTOGRAPHY</a>
+                    <a class="dd-option" href="contact.html">CONTACT</a>
+                </div>
+                <!-- Activates drop-down nav menu when hamburger icon is clicked -->
+                <a href="javascript:void(0);" class="icon" onclick="navDropDownMenu()">
+                    <i onclick="iconToggle(this)" class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="introduction">
+        <h2>Hi, I'm Barry! I'm completing a full stack software engineer course and have interest in web design and eLearning course development.</h2>
+    </main>
+
+
+    <script>
+        /* Function displays drop-down menu */
+        function navDropDownMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                x.style.padding = "60px 0px 0px 0px";
+            }
+        }
+
+        /* Toggles between hamburger and X-window-close icon */
+        function iconToggle(icon_switch) {
+            icon_switch.classList.toggle("fa-window-close");
+        }
+    </script>
+</body>
+</html>

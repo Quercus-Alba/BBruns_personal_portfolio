@@ -1,0 +1,451 @@
+
+html {
+  overflow-y: scroll;
+}
+
+/* Ensures header menu options are not displayed when sidebar menu appears */
+header {
+display: none;
+}
+
+/* Sidebar Section  */  
+.sidebar {
+    background-color: rgba(10, 21, 0, .95);
+    width: 25%;
+    height: 2400px;
+    margin-top: -9px;  /* negative to move sidebar to fill top margin edge */
+    margin-left: -9px;  /* negative to move sidebar to fill left margin edge */
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    border-right: 1px solid #FCC101;
+}
+
+.me-photo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.me-photo {
+    height: auto; 
+    width: auto; 
+    max-width: 163px; 
+    max-height: 200px;
+    border: 3px solid #f6e9da;
+}
+
+.me-title {
+    text-align: center;
+    font-weight: 300;
+    padding: 0 20px 0 20px;   /* top | right | bottom | left  */
+}
+
+.me-title a {
+    text-decoration: none;
+    font-weight: 400;
+    color:rgba(246, 233, 218);
+}
+
+.me-title p {
+    font-size: 18px;
+    margin-block-start: -9px;   /* reduce space between name and title */
+    line-height: 1.4em;
+}
+
+/* Navigation menu options on sidebar */
+/* Format so menu items are left justified but centered on sidebar */
+.nav-sidebar {
+    padding: 20px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.nav-sidebar a {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Hover and mouse down effect on sidebar menu */
+.nav-sidebar a:hover, .me-title a:hover {
+  font-weight: 500;
+}
+
+.nav-sidebar a:active, .me-title a:active {
+  font-weight: 500;
+  color:rgba(252, 193, 1);
+}
+
+
+/* Remove sidebar and display hamburger menu for cell phone screen */
+@media only screen and (max-width: 800px) {
+  .sidebar {
+      display: none;
+  }
+}
+
+
+/* Social Media Section  */
+.social-media {
+    padding: 20px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+/* Follow Us text */
+.social-media p {
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Style all font awesome icons */
+.social-media .fa {
+    padding: 10px;
+    font-size: 18px;
+    width: 15px;
+    height: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 8px;
+    border-radius: 20%;
+  }
+
+  
+  /* hover effect cursor over social media blocks */
+  .social-media .fa:hover {
+    opacity: 0.7;
+    color:rgba(10, 21, 0, .95);
+  }
+
+  /* Mouse down effect on social media bloacks */
+  .social-media .fa:active {
+    opacity: unset;
+    color:rgba(252, 193, 1);
+  }
+
+/* Set background color for all paged except landing page */
+body {
+  background-color: rgba(229, 250, 207, .20);
+}
+
+/* INTEREST PAGE */
+
+.interest {
+  padding: 1px 20px 0 27%;
+}
+
+.interest h2 {
+  font-family: 'Lato', sans-serif;
+  color: rgba(10, 21, 0, 1);
+  padding-top: 15px;
+  background-color: rgba(252, 193, 1, 0.20);
+}
+
+.interest p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+  color: rgba(10, 21, 0, .85);
+  padding-right: 20px;
+}
+
+.interest ul {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(10, 21, 0, .85);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.interest li {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.interest .last-about {
+  Padding-bottom: 0px;
+}
+
+.skills-list li {
+  padding-bottom: 5px;
+}
+
+/* END of INTEREST PAGE */
+
+
+/* WEB PROJECT PAGE */
+.web-projects {
+  padding: 1px 20px 0 27%;
+}
+
+.web-projects h2 {
+font-family: 'Lato', sans-serif;
+color: rgba(10, 21, 0, 1);
+background-color: rgba(252, 193, 1, 0.20);
+padding-top: 15px;
+}
+
+.web-projects p {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(10, 21, 0, .85);
+  font-weight: 300;
+}
+
+.github-link {
+  padding: 0 0 10px 0;
+}
+
+/* END of WEB PROJECTs PAGE */
+
+
+/* eLEARNING PROJECTS PAGE */
+
+.learn-projects {
+  padding: 1px 20px 0 27%;
+}
+
+.learn-projects h2 {
+font-family: 'Lato', sans-serif;
+color: rgba(10, 21, 0, 1);
+background-color: rgba(252, 193, 1, 0.20);
+padding-top: 15px;
+}
+
+.learn-projects p {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(10, 21, 0, .85);
+  font-weight: 300;
+}
+
+.learn-projects h3 {
+  font-family: 'Lato', sans-serif;
+  padding: 65px 0 300px 0;
+  font-weight: 900;
+}
+
+/* END of eLEARNING PROJECTS PAAGE */
+
+
+/* PHOTO PAGE */
+
+:root {
+  --gap: 4px;
+  --duration-shrink: .5s;
+  --duration-expand: .25s;
+  --no-duration: 0s;
+}
+
+.photo-main {
+  padding: 1px 20px 0 27%;
+}
+
+.photo-main h2, .photo-main h3 {
+  font-family: 'Lato', sans-serif;
+  color: rgba(10, 21, 0, 1);
+  padding-top: 15px;
+}
+
+.photo-main h2 {
+  background-color: rgba(252, 193, 1, 0.20);
+}
+
+.photo-main h3 {
+  font-size: 0.90em;
+}
+
+.photo-main p {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(10, 21, 0, .85);
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.photo-main ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: var(--gap);
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .photo-main ul {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+}
+
+.photo-main li {
+  transition-property: transform, opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: var(--duration-expand);
+}
+
+.photo-main li.is-zoomed {
+  transition-duration: var(--duration-shrink);
+}
+
+.is-zoomed .photo-main li:not(.is-zoomed) {
+  opacity: 0.3;
+}
+
+button {
+  all: initial;
+  display: block;
+  aspect-ratio: 1.47/1;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+.photo-main li.is-zoomed button,
+ul:not(.is-zoomed) button:focus {
+  outline: 2px solid rgba(252, 193, 1);
+  outline-offset: 1px;
+}
+
+.js-favs img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion) {
+  .photo-main li,
+  .photo-main li.is-zoomed {
+    transition-duration: var(--no-duration);
+  }
+}
+
+/* END of PHOTO PAGE */
+
+
+/* Social Media Section for sidebar  */
+.social-media {
+  padding: 20px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+}
+
+/* Follow Us text */
+.social-media p {
+  font-family: 'Roboto', sans-serif;
+  color:rgba(246, 233, 218);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Style all font awesome icons */
+.social-media .fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 15px;
+  height: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 8px;
+  border-radius: 20%;
+}
+
+/* hover effect cursor over social media blocks */
+.social-media .fa:hover {
+  opacity: 0.7;
+  color:rgba(10, 21, 0, .95);
+}
+
+/* Mouse down effect on social media bloacks */
+.social-media .fa:active {
+  opacity: unset;
+  color:rgba(252, 193, 1);
+}
+
+
+/* Set a specific color for each social media brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #0E76A8;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+/* END of Social Media Section for Sidebar */
+
+
+
+
+
+/* CONTACT PAGE */
+.contact {
+    padding: 1px 20px 0 27%;
+}
+
+.contact h2 {
+  font-family: 'Lato', sans-serif;
+  color: rgba(10, 21, 0, 1);
+  background-color: rgba(252, 193, 1, 0.20);
+  padding-top: 15px;
+}
+
+.contact-info {
+    line-height: 2.0;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(10, 21, 0, .85);
+    font-weight: 300;
+}
+
+.contact-info dt {
+    display: block;
+    clear: both;
+    width: 115px;
+    float: left;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-icon {
+    width: 1em;
+    margin-right: 0.6em;
+    text-align: center;
+}
+
+/* END of CONTACT PAGE */
+
+
+
