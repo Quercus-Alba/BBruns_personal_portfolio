@@ -16,12 +16,9 @@ This webdesign was developed for a Portfolio Website project assignment at Codec
 - Photo page with photo images that expand when selected (required JavaScript)
 - All pages are responsive to screen size by device (e.g., iPad, phone)
 
-### Unresolved problem:
-The sidebar text flickers intermittently when a menu item is selected. After some Google research, I thought this issue might be related to the y-scroll bar being present on some pages but not others. So, I added **html {overflow-y: scroll;}** to ensure a right side y-scroll bar occurs on each page except the landing page.  This lessened the text-flicker problem but did not eliminate it. Any suggestions or thoughts regarding this issue is appreciated.
 
+#### Link to view portfolio website: https://quercus-alba.github.io/BBruns_personal_portfolio/
 
-#### Link to view portfolio website: 
-https://quercus-alba.github.io/BBruns_personal_portfolio/
 
 All photos Copyright 2022 Barry J. Bruns. All rights reserved.
 
