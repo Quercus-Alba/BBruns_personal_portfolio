@@ -21,8 +21,9 @@ The sidebar text flickers intermittently when a menu item is selected. After som
 
 
 #### Link to view portfolio website: 
+https://quercus-alba.github.io/BBruns_personal_portfolio/
 
-
+All photos Copyright 2022 Barry J. Bruns. All rights reserved.
 
 Please provide feedback or comments.
 
