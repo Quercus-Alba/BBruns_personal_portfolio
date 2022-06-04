@@ -1,0 +1,19 @@
+
+/* Styles for Web Projects Page */
+
+.web-projects h2 {
+    font-family: 'Lato', sans-serif;
+    color: rgba(10, 21, 0, 1);
+    background-color: rgba(252, 193, 1, 0.20);
+    padding-top: 15px;
+    }
+    
+    .web-projects p {
+      font-family: 'Roboto', sans-serif;
+      color: rgba(10, 21, 0, .85);
+      font-weight: 300;
+    }
+    
+    .github-link {
+      padding: 0 0 10px 0;
+    }

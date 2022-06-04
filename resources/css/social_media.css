@@ -1,0 +1,61 @@
+
+/* Styling for SideBar Social Media Icons */
+
+.social-media {
+    padding: 20px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+  }
+  
+  /* Follow Us text */
+  .social-media p {
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  /* Style all font awesome icons */
+  .social-media .fa {
+    padding: 10px;
+    font-size: 18px;
+    width: 15px;
+    height: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 8px;
+    border-radius: 20%;
+  }
+  
+  /* hover effect cursor over social media blocks */
+  .social-media .fa:hover {
+    opacity: 0.7;
+    color:rgba(10, 21, 0, .95);
+  }
+  
+  /* Mouse down effect on social media bloacks */
+  .social-media .fa:active {
+    opacity: unset;
+    color:rgba(252, 193, 1);
+  }
+  
+  
+  /* Set a specific color for each social media brand */
+    
+    /* Facebook */
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+  
+    .fa-linkedin {
+      background: #0E76A8;
+      color: white;
+    }
+    
+    /* Twitter */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }

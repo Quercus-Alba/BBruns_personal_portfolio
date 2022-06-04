@@ -1,0 +1,78 @@
+
+/* Styling for top nav-bar and hamburger drop-down menu */
+
+/* Display top bar to replace sidebar for pad and phone screen sizes */
+/* and display a logo on left side of myself (png), name, and title */
+header {
+    background: url("../../resources/images/bb_picbkgd_306x57.png") no-repeat fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(10, 21, 0, .95);
+    border-bottom: 1px solid #FCC101;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 3;
+}
+
+/* Resize photo and name for cell phone screens <= 540px */
+@media only screen and (max-width: 540px) {
+    header {
+        /* smaller sized logo for narrower screens */
+        background: url("../../resources/images/bb_picbkgd_orig_306x57sm.png") no-repeat fixed; 
+        width: 100%;
+        height: 60px;
+        background-color: rgba(10, 21, 0, .95);
+        border-bottom: 1px solid #FCC101;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        z-index: 3;
+    }
+  }
+
+
+/* Hamburger icon drop-down (dd) menu section */
+  
+.topnav {
+  background-color: rgba(10, 21, 0, .5);
+  position: relative;
+}
+
+/* See navDropDownMenu() function which switches between display: block
+  and display:none to show or hide drop-down menu nav options  */
+#myLinks {
+  display: none;
+}
+
+/* Formating for hamburger and window-close icon for drop-down menu */
+.icon {
+  color: rgba(246, 233, 218);
+  margin: 16px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Formating for drop-down (dd) menu options */
+.dd-option {
+  color: rgba(246, 233, 218);
+  font-family: 'Roboto', sans-serif;
+  padding: 11px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-align: right;   /* Align menu itmes on right side */
+}
+
+.topnav a.icon {
+  background: rgba(10, 21, 0, .95);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.dd-option:active {
+  color: rgba(252, 193, 1);
+  font-weight: 900;
+}

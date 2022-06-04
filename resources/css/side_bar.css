@@ -1,0 +1,75 @@
+
+/* Styling for SideBar Section */
+
+.sidebar {
+    background-color: rgba(10, 21, 0, .95);
+    width: 25%;
+    height: 2400px;
+    margin-top: -9px;  /* negative to move sidebar to fill top margin edge */
+    margin-left: -9px;  /* negative to move sidebar to fill left margin edge */
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    border-right: 1px solid #FCC101;
+}
+
+.me-photo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.me-photo {
+    height: auto; 
+    width: auto; 
+    max-width: 163px; 
+    max-height: 200px;
+    border: 3px solid #f6e9da;
+}
+
+.me-title {
+    text-align: center;
+    font-weight: 300;
+    padding: 0 20px 0 20px;   /* top | right | bottom | left  */
+}
+
+.me-title a {
+    text-decoration: none;
+    font-weight: 400;
+    color:rgba(246, 233, 218);
+}
+
+.me-title p {
+    font-size: 18px;
+    margin-block-start: -9px;   /* reduce space between name and title */
+    line-height: 1.4em;
+}
+
+/* Navigation menu options on sidebar */
+/* Format so menu items are left justified but centered on sidebar */
+.nav-sidebar {
+    padding: 20px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.nav-sidebar a {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(246, 233, 218);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Hover and mouse down effect on sidebar menu */
+.nav-sidebar a:hover, .me-title a:hover {
+  font-weight: 500;
+}
+
+.nav-sidebar a:active, .me-title a:active {
+  font-weight: 500;
+  color:rgba(252, 193, 1);
+}
